@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="untitled">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Shimaa Yousef Couture</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      background-color: #F9F9F7; /* AppTheme.ivory */
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .brand-name {
+      font-family: serif;
+      font-size: 24px;
+      letter-spacing: 6px;
+      color: #1A1A1A;
+      margin-bottom: 20px;
+      animation: fadeInOut 2s ease-in-out infinite;
+    }
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #C5A059; /* AppTheme.primaryGold */
+      border-top: 2px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container" id="loading-indicator">
+    <div class="brand-name">SHIMAA YOUSEF COUTURE</div>
+    <div class="loader"></div>
+  </div>
+
+  <script>
+    // This script will remove the loading indicator once the app is ready
+    window.addEventListener('flutter-first-frame', function() {
+      var loadingIndicator = document.getElementById('loading-indicator');
+      if (loadingIndicator) {
+        loadingIndicator.style.transition = 'opacity 0.5s ease-out';
+        loadingIndicator.style.opacity = '0';
+        setTimeout(function() {
+          loadingIndicator.remove();
+        }, 500);
+      }
+    });
+  </script>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

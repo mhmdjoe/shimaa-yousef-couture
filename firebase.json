@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "flutter": {
+"platforms":{"android":{"default":{"projectId":"shimaa-couture","appId":"1:84441590893:android:2461286c6113ef1f89e364","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"shimaa-couture","configurations":{"android":"1:84441590893:android:2461286c6113ef1f89e364","ios":"1:84441590893:ios:7d8d4bd8e5e4c20c89e364","macos":"1:84441590893:ios:7d8d4bd8e5e4c20c89e364","web":"1:84441590893:web:c2360b24e473b5be89e364","windows":"1:84441590893:web:9abbe46b3adeb1ac89e364"}}}}}}
