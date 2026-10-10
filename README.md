@@ -2,10 +2,13 @@
 
 An elegant fashion portfolio mobile and web application for **Shimaa Yousef Couture (Maison Dress)**, showcasing bespoke dress collections, bridal wear, custom tailoring options, and direct consultation booking.
 
+👉 **[🌐 Launch Live Web App](https://mhmdjoe.github.io/shimaa-yousef-couture/)** (Try it live in your browser!)
+
 ---
 
 ## 🌟 Key Features
 
+- 🌐 **Live Web Demo**: Open and explore the haute couture catalog directly in your browser.
 - 💃 **Haute Couture Gallery**: High-resolution dress catalog arranged in a masonry grid using `flutter_staggered_grid_view`.
 - ✨ **Fluid Page Animations**: Micro-interactions and entry animations powered by `animate_do`.
 - ☁ **Cloud Integration**: Real-time dress collection synchronization using Firebase Firestore.
@@ -19,7 +22,7 @@ An elegant fashion portfolio mobile and web application for **Shimaa Yousef Cout
 
 | Category | Technology |
 | :--- | :--- |
-| **Framework** | Flutter & Dart SDK |
+| **Framework** | Flutter (Dart SDK) & Flutter Web |
 | **Backend Data** | Firebase Core & Cloud Firestore |
 | **Layouts & Grids** | `flutter_staggered_grid_view` |
 | **Animations** | `animate_do` |
