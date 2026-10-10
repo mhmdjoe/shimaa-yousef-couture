@@ -1,17 +1,52 @@
-# untitled
+# 👗 Shimaa Yousef Couture | Haute Couture Portfolio App
 
-A new Flutter project.
+An elegant fashion portfolio mobile and web application for **Shimaa Yousef Couture (Maison Dress)**, showcasing bespoke dress collections, bridal wear, custom tailoring options, and direct consultation booking.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌟 Key Features
 
-A few resources to get you started if this is your first Flutter project:
+- 💃 **Haute Couture Gallery**: High-resolution dress catalog arranged in a masonry grid using `flutter_staggered_grid_view`.
+- ✨ **Fluid Page Animations**: Micro-interactions and entry animations powered by `animate_do`.
+- ☁ **Cloud Integration**: Real-time dress collection synchronization using Firebase Firestore.
+- 📁 **Custom Fitting Requests**: Attachment and file selection with `file_picker`.
+- 🎨 **Luxury Typography**: Custom typography and styling with `google_fonts` (Playfair Display / Cinzel / Amiri).
+- 📞 **Direct Fitting Bookings**: One-tap consultation and WhatsApp requests via `url_launcher`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack & Dependencies
+
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Flutter & Dart SDK |
+| **Backend Data** | Firebase Core & Cloud Firestore |
+| **Layouts & Grids** | `flutter_staggered_grid_view` |
+| **Animations** | `animate_do` |
+| **Media & Files** | `file_picker`, `shared_preferences` |
+| **Typography & Utility**| `google_fonts`, `url_launcher` |
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mhmdjoe/shimaa-yousef-couture.git
+   cd shimaa-yousef-couture
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the project**:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 📄 License
+This project is open-source under the [MIT License](LICENSE).
